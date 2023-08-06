@@ -1,5 +1,5 @@
 .header{
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -12,23 +12,25 @@
     background-color: #FFFCF3;
     box-shadow: 0 3px 5px black;
     font-family: 'syne';
+    cursor: pointer;
 }
 
 
-.logo{
-    display: flex;
-    align-items: center;
-    h2{
-
-        font-weight: 700;
-        font-size: 50px;
-    }
-
-    img{
-        height: 50px;
-        width: 50px;
-    }
-
+.logo {
+  display: flex;
+  align-items: center;
+  :hover {
+    color: darkgrey;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .menu{
@@ -41,7 +43,6 @@
     height: 5vh;
     gap: 1rem;
 
-
         a{
             border-width: 0 0 4px 4px;
             width: 1rem;
@@ -51,6 +52,10 @@
             margin-right: 16vw;
             margin-top: 3vh;
             text-align: center;
+            cursor: pointer;
+            :hover {
+              color: darkgrey;
+            }
         }
 
         p{
@@ -60,7 +65,5 @@
             text-align: start;
         }
    
-
-
 
 }
