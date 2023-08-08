@@ -49,38 +49,64 @@
     justify-content: space-between;
     font-family: 'overpass';
     height: 30vh;
-    width: 100vw;
+
 
     a{
         transform: rotate(-90deg);
         display: flex;
         align-items: center;
         cursor: pointer;
-        :hover {
-            color: darkgrey;
-          }
+        z-index: 2;
+        
     }
+    
 
     p{
         text-align: center;
     }
 
-    img{
-        animation: arrowScroll 2600ms linear infinite;
 
-        @keyframes arrowScroll {
-            0% {
-                top: -220px;
-            }
-        
-            50% {
-                top: 220px;
-            }
-        
-            100% {
-                top: 220px;
-            }
-    }
+img{
+    
+    animation: slideDown 2000ms linear infinite;
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        25% {
+            transform: translateY(-50%);
+        }
+    
+        50% {
+            transform: translateY(0%);
+        }
+
+        76% {
+            transform: translateY(50%);
+        }
+    
+        100% {
+            transform: translateY(100%);
+        }
+    } 
 }
 
+}
+
+.alink{
+    a:hover {
+        color: darkgrey;
+      }
+}
+
+.scroll-container{
+    position: absolute;
+    height: 300px;
+    right: 20px;
+    bottom: 0px;
+}
+
+.scroll-arrow-box{
+    overflow: hidden;
 }
