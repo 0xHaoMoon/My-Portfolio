@@ -13,6 +13,7 @@
     box-shadow: 0 3px 5px black;
     font-family: 'syne';
     cursor: pointer;
+    z-index: 3;
 }
 
 
@@ -34,38 +35,66 @@
 }
 
 .menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     font-weight: 700;
     font-size: 1.5rem;
-    width: 60vw;
-    height: 5vh;
-    gap: 1rem;
+    font-family: 'syne';
+    height: 100%;
+    width: 100%;
+    background-color: #FFFCF3;
+    position: fixed;
+    z-index: 2;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
-        a{
-            border-width: 0 0 4px 4px;
-            width: 1rem;
-            height: 1rem;
-            border-color: var(--color-line);
-            border-style: solid;
-            margin-right: 16vw;
-            margin-top: 3vh;
-            text-align: center;
-            cursor: pointer;
-            :hover {
-              color: darkgrey;
-            }
-        }
+    animation: slideIn 0.5s ease-in-out;
 
-        p{
-            width: 17vw;
-            margin-top: -1rem;
-            margin-left: 0.5rem;
-            text-align: start;
-        }
-   
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+}
 
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 23vw;
+    width: 80vw;
+    font-size: 2rem;
+    a{
+        border-width: 0 0 4px 4px;
+        width: 1rem;
+        height: 1rem;
+        border-color: var(--color-line);
+        border-style: solid;
+        margin-right: 16vw;
+        margin-top: 3vh;
+        text-align: center;
+        cursor: pointer;
+
+        :hover {
+            color: darkgrey;
+          }
+    }
+
+    p{
+        width: 75vw;
+        margin-top: -2rem;
+        margin-left: 0.5rem;
+        text-align: start;
+    }
+
+    img{
+        width: 100vw;
+        object-fit: cover;
+    }
+    
 }
 
 .burgerMenu{
@@ -90,4 +119,23 @@
   
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+
+  .hideHeader{
+    display: none;
+  }
+
+  .slideOutAnimation{
+    animation: slideOut 0.5s ease-in-out;
+    animation-fill-mode: both;
+    @keyframes slideOut {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-100%);
+      }
+    }
   }

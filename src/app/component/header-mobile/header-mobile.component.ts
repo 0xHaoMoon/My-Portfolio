@@ -7,13 +7,23 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderMobileComponent {
 
-  @Input() burgerMenuState : boolean = false;
+  @Input() burgerMenuState : boolean = true;
 
   openBurgerMenu(){
     this.burgerMenuState = !this.burgerMenuState;
-    const burgerMenuElement = document.querySelector('.burgerMenu');
-    if (burgerMenuElement) {
+    const burgerMenuElement:any = document.querySelector('.burgerMenu');
+    const menuElement:any = document.querySelector('.menu');
+    
+    if (!this.burgerMenuState) {
       burgerMenuElement.classList.toggle('change');
+      menuElement.classList.toggle('hideHeader');
+    } else{
+      burgerMenuElement.classList.toggle('change');
+      menuElement.classList.toggle('slideOutAnimation');
+      setTimeout(() => {
+        menuElement.classList.toggle('hideHeader');
+        menuElement.classList.remove('slideOutAnimation');
+      }, 500);
     }
 }
 
