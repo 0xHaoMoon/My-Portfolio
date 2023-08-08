@@ -9,16 +9,14 @@ export class HeaderMobileComponent {
 
   @Input() burgerMenuState : boolean = false;
 
-  openBurgerMenu(x){
-    if(this.burgerMenuState == true){
-    this.burgerMenuState = false;
-    }else{
-      this.burgerMenuState = true;
+  openBurgerMenu(){
+    this.burgerMenuState = !this.burgerMenuState;
+    const burgerMenuElement = document.querySelector('.burgerMenu');
+    if (burgerMenuElement) {
+      burgerMenuElement.classList.toggle('change');
     }
-      x.classList.toggle("change");
-  
-
 }
+
 }
 
 
