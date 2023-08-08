@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LandingScreenComponent } from './component/landing-screen/landing-screen.component';
 import { HeaderMobileComponent } from './component/header-mobile/header-mobile.component';
+import { MainSiteComponent } from './main-site/main-site.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HeaderMobileComponent } from './component/header-mobile/header-mobile.c
     HeaderComponent,
     LandingScreenComponent,
     HeaderMobileComponent,
+    MainSiteComponent,
   ],
   imports: [
     BrowserModule,
