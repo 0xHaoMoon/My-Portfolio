@@ -12,7 +12,7 @@ export class HeaderMobileComponent {
   openBurgerMenu(){
     this.burgerMenuState = !this.burgerMenuState;
     const burgerMenuElement:any = document.querySelector('.burgerMenu');
-    const menuElement:any = document.querySelector('.menu');
+    const menuElement:any = document.querySelector('.menu-mobile');
     
     if (!this.burgerMenuState) {
       burgerMenuElement.classList.toggle('change');

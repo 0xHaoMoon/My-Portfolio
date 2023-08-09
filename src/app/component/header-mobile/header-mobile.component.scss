@@ -1,4 +1,4 @@
-.header{
+.header-mobile{
     position: fixed;
     left: 0;
     right: 0;
@@ -17,7 +17,7 @@
 }
 
 
-.logo {
+.logo-mobile {
   display: flex;
   align-items: center;
   :hover {
@@ -34,7 +34,7 @@
   }
 }
 
-.menu{
+.menu-mobile{
     font-weight: 700;
     font-size: 1.5rem;
     font-family: 'syne';
@@ -61,7 +61,7 @@
     }
 }
 
-.info{
+.info-mobile{
     display: flex;
     flex-direction: column;
     gap: 23vw;
