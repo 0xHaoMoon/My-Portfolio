@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { LandingScreenComponent } from './component/landing-screen/landing-screen.component';
 import { HeaderMobileComponent } from './component/header-mobile/header-mobile.component';
 import { MainSiteComponent } from './main-site/main-site.component';
+import { AboutMeComponent } from './component/about-me/about-me.component';
+import { SkillsComponent } from './component/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { MainSiteComponent } from './main-site/main-site.component';
     LandingScreenComponent,
     HeaderMobileComponent,
     MainSiteComponent,
+    AboutMeComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,
