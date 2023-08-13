@@ -9,6 +9,7 @@ import { HeaderMobileComponent } from './component/header-mobile/header-mobile.c
 import { MainSiteComponent } from './main-site/main-site.component';
 import { AboutMeComponent } from './component/about-me/about-me.component';
 import { SkillsComponent } from './component/skills/skills.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SkillsComponent } from './component/skills/skills.component';
     MainSiteComponent,
     AboutMeComponent,
     SkillsComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

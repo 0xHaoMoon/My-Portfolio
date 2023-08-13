@@ -1,0 +1,46 @@
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    overflow-x: hidden;
+}
+
+.arrow-right-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2vh;
+
+
+    
+    img{
+        height: 150px;
+        width: 150px;
+
+        @media (min-width: 800px) {
+            height: unset;
+            width: unset;
+            }
+
+    }
+
+    animation: slideIn 1000ms linear;
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+
+        }
+
+        50% {
+            transform: translatex(-50%);
+            opacity: 0.5;
+        }
+    
+        100% {
+            transform: translateX(-0%);
+            opacity: 1;
+        }
+
+    }
+}

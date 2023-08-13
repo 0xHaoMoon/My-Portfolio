@@ -9,7 +9,7 @@
 
 .arrow-left-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 2vh;
 
 
@@ -17,6 +17,11 @@
     img{
         height: 150px;
         width: 150px;
+
+        @media (min-width: 800px) {
+            height: unset;
+            width: unset;
+            }
 
     }
 
@@ -73,9 +78,11 @@
         padding: 10px;
         position: absolute;
         background-color: #FFFCF3;
+        font-size: 9vw;
+
         @media (min-width: 800px) {
-            font-size: 50px;
-            margin-top: -35px;
+            font-size: 5vw;
+            margin-top: -60px;
             padding-top: 0;
             }
     }
@@ -93,16 +100,16 @@
 
 
     img{
-        height: auto;
-        width: 80px;
-        padding: 10px;
+        height: 40px;
+        width: auto;
         z-index: 2;
         cursor: pointer;
         object-fit: cover;
         padding: 30px;
 
         @media (min-width: 800px) {
-            width: 150px;
+            height: 80px;
+            padding: 50px;
             }
 
     }
