@@ -10,6 +10,8 @@ import { MainSiteComponent } from './main-site/main-site.component';
 import { AboutMeComponent } from './component/about-me/about-me.component';
 import { SkillsComponent } from './component/skills/skills.component';
 import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { ArrowRightComponent } from './component/arrow-right/arrow-right.component';
+import { ArrowLeftComponent } from './component/arrow-left/arrow-left.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { PortfolioComponent } from './component/portfolio/portfolio.component';
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
+    ArrowRightComponent,
+    ArrowLeftComponent,
   ],
   imports: [
     BrowserModule,

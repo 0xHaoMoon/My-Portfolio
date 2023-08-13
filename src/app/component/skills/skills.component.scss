@@ -7,44 +7,7 @@
 
 }
 
-.arrow-left-container{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2vh;
 
-
-    
-    img{
-        height: 150px;
-        width: 150px;
-
-        @media (min-width: 800px) {
-            height: unset;
-            width: unset;
-            }
-
-    }
-
-    animation: slideIn 1000ms linear;
-    @keyframes slideIn {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-
-        }
-
-        50% {
-            transform: translatex(50%);
-            opacity: 0.5;
-        }
-    
-        100% {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-
-    }
-}
 
 .skills-container{
     display: flex;
