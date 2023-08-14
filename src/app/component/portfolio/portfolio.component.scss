@@ -17,6 +17,10 @@
         font-family: 'syne';
         font-weight: 800;
         font-size: 9vw;
+
+        @media (min-width: 860px) {
+            font-size: 5vw;
+          };
     }
 
     p{
@@ -24,6 +28,10 @@
         max-width: 80vw;
         font-size: 4vw;
         font-weight: 400;
+
+        @media (min-width: 860px) {
+            font-size: 2vw;
+          };
     }
 }
 
