@@ -13,6 +13,7 @@ import { PortfolioComponent } from './component/portfolio/portfolio.component';
 import { ArrowRightComponent } from './component/arrow-right/arrow-right.component';
 import { ArrowLeftComponent } from './component/arrow-left/arrow-left.component';
 import { ProjectComponent } from './component/project/project.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProjectComponent } from './component/project/project.component';
     ArrowRightComponent,
     ArrowLeftComponent,
     ProjectComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
