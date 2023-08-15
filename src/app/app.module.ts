@@ -14,6 +14,7 @@ import { ArrowRightComponent } from './component/arrow-right/arrow-right.compone
 import { ArrowLeftComponent } from './component/arrow-left/arrow-left.component';
 import { ProjectComponent } from './component/project/project.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,10 +30,13 @@ import { ContactComponent } from './component/contact/contact.component';
     ArrowLeftComponent,
     ProjectComponent,
     ContactComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,65 @@
+.contact-container{
+    background-image: url(../../../assets/img/Rectangle5.svg);
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin: 0;
+    padding: 10vw;
+    padding-right: 10vw;
+
+    h2{
+        color: darkgray;
+    font-family: 'syne';
+    font-size: 8vw;
+    font-weight: 800;
+    padding-top: 3vh;
+    }
+
+    p{
+        color: white;
+        font-family: "overpass";
+        font-weight: 400;
+        font-size: 3vw;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+
+        input{
+            appearance: none;
+            border: none;
+            outline: none;
+            border-bottom: .1em solid white;
+            background: black;
+            border-radius: .2em .2em 0 0;
+            padding: .4em;
+            color: white;
+            width: 50vw;
+            font-family: 'overpass';
+        }
+
+        textarea{
+            appearance: none;
+            border: none;
+            outline: none;
+            border-bottom: .1em solid white;
+            background: black;
+            border-radius: .2em .2em 0 0;
+            padding: .4em;
+            color: white;
+            width: 50vw;
+            font-family: 'overpass';
+        }
+
+        button{
+            font-size: 4vw;
+            border: 4px solid white;
+            background: black;
+            color: white;
+            padding: 10px;
+            font-family: 'overpass';
+        }
+    }
+}
