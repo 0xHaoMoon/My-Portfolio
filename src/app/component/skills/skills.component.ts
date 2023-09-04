@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICONS } from 'src/app/mock-skills';
+import* as AOS from 'aos'
 
 @Component({
   selector: 'app-skills',
@@ -12,7 +13,9 @@ export class SkillsComponent implements OnInit{
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    AOS.init();
+  }
   
 
 }

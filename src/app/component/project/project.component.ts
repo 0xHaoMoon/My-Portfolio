@@ -2,6 +2,7 @@ import { NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { PROJECTS } from 'src/app/mock-project';
 import { Project } from 'src/app/project';
+import* as AOS from 'aos'
 
 @Component({
   selector: 'app-project',
@@ -13,7 +14,9 @@ export class ProjectComponent implements OnInit{
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    AOS.init();
+  }
 
   
 }

@@ -1,3 +1,14 @@
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+
 .contact-container{
     background-image: url(../../../assets/img/Rectangle5.svg);
     background-repeat: no-repeat;

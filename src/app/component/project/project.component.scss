@@ -100,25 +100,6 @@
     align-items: center;
 
 
-    animation: slideIn 1000ms linear;
-    @keyframes slideIn {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-
-        }
-
-        50% {
-            transform: translatex(50%);
-            opacity: 0.5;
-        }
-    
-        100% {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    } 
-
     img{
         width: 230px;
         height: 200px;
@@ -126,24 +107,6 @@
         cursor: pointer;
         border: 4px solid black;
 
-            animation: slideIn 1000ms linear;
-    @keyframes slideIn {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-
-        }
-
-        50% {
-            transform: translatex(50%);
-            opacity: 0.5;
-        }
-    
-        100% {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-    } 
 
         @media (min-width: 800px) {
         width: 500px;

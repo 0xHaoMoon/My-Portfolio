@@ -1,13 +1,13 @@
 <div class="flex" >
 <div class="project-container" *ngFor="let project of projects;">
 
-    <div class="img-container">
+    <div class="img-container" data-aos="fade-right">
         <div class="border-img">
         </div>
         <img src="../../../assets/img/{{project.image}}">
         </div>
 
-    <div class="info-container">
+    <div class="info-container" data-aos="fade-left">
         <h3>{{project.name}}</h3>
         <h4>{{project.subheadline}}</h4>
         <p>{{project.desc}}</p>

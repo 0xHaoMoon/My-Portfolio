@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-header-mobile',
   templateUrl: './header-mobile.component.html',
@@ -27,6 +28,11 @@ export class HeaderMobileComponent {
     }
 }
 
+
+
+public scrollTo(section:any) {
+  document.querySelector(section)
+  .scrollIntoView({ block: 'start',  behavior: 'smooth' });
 }
 
-
+}
