@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 
 @Component({
@@ -28,11 +28,14 @@ export class HeaderMobileComponent {
     }
 }
 
+scrollPoint(element:string) {
+  const newLocal = document.getElementById(element);
+  newLocal?.scrollIntoView({behavior: "smooth"});
 
-
-public scrollTo(section:any) {
-  document.querySelector(section)
-  .scrollIntoView({ block: 'start',  behavior: 'smooth' });
 }
+
+
+
+
 
 }

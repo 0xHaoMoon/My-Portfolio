@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-screen.component.scss']
 })
 export class LandingScreenComponent {
+  
+  scrollPoint(element:string) {
+    const newLocal = document.getElementById(element);
+    newLocal?.scrollIntoView({behavior: "smooth"});
 
+  }
 }

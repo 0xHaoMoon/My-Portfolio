@@ -12,5 +12,10 @@ export class AboutMeComponent implements OnInit{
     AOS.init();
   }
 
+  scrollPoint(element:string) {
+    const newLocal = document.getElementById(element);
+    newLocal?.scrollIntoView({behavior: "smooth"});
+
+  }
 
 }
