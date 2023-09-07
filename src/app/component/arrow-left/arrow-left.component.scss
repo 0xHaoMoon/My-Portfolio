@@ -1,13 +1,14 @@
 .arrow-right-container{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
+    height: 15vh;
 
 
     
     img{
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: auto;
 
         @media (min-width: 800px) {
             height: unset;

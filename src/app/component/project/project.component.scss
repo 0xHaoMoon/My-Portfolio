@@ -59,10 +59,16 @@
 }
 
 .border{
-    font-size: 4vw;
+    font-size: 2vw;
     border: 4px solid black;
+    cursor: pointer;
+    :hover {
+        color: darkgrey;
+      }
 
-    p{
+    a{
+        all: unset;
+
         font-family: 'syne';
         font-weight: 600;
         margin: 0;
@@ -119,4 +125,5 @@
     display: flex;
     flex-direction: column;
     gap: 10vh;
+    margin-bottom: 5vh;
 }

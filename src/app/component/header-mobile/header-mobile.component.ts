@@ -30,11 +30,11 @@ export class HeaderMobileComponent {
 
 scrollPoint(element:string) {
   const newLocal = document.getElementById(element);
-  if (element !=='landing') {
+  if (this.burgerMenuState == false) {
     newLocal?.scrollIntoView({behavior: "smooth"});
     this.openBurgerMenu();
   } else{
-    newLocal?.scrollIntoView({behavior: "smooth"});
+        newLocal?.scrollIntoView({behavior: "smooth"});
   }
 
  

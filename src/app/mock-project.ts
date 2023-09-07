@@ -7,8 +7,8 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | HTML | CSS',
         desc: 'Task manager inspired by the Kanban system. Create and organize tasks using the drag and drop function, assign these to users, and use specific categories.',
         image: 'Join_Kanban_Template.png',
-        URL: 'https://join.haotruong.com/',
-        gitHub: 'https://github.com/HaoTruong/join',
+        URL: 'https://hao-truong.developerakademie.net/Join-main/index.html',
+        gitHub: 'https://github.com/0xHaoMoon/Join',
     },
 
     {
@@ -17,8 +17,8 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | OOP | HTML | CSS ',
         desc: 'Javascript-based and object-orientated jump & run game. Help Pepe to get his taco back!',
         image: 'El_Pollo_Loco_template.png',
-        URL: 'https://el-pollo-loco.haotruong.com/',
-        gitHub: 'https://github.com/HaoTruong/el-pollo-loco',
+        URL: 'https://hao-truong.developerakademie.net/El-Pollo-Loco-main/index.html',
+        gitHub: 'https://github.com/0xHaoMoon/El-Pollo-Loco',
     },
 
 ];
