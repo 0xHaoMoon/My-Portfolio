@@ -16,6 +16,7 @@ import { ProjectComponent } from './component/project/project.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FooterComponent } from './footer/footer.component';
     ProjectComponent,
     ContactComponent,
     FooterComponent,
+    ImprintComponent,
 
   ],
   imports: [
