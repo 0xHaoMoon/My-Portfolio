@@ -17,6 +17,7 @@
         font-size: 7vw;
         margin: 0;
         font-weight: 900;
+        cursor: context-menu;
 
         @media (max-width: 860px) {
             font-size: 10vw;
@@ -36,6 +37,7 @@
     align-items: center;
     gap: 1rem;
     height: 10vh;
+    cursor: context-menu;
 
     img{
         width: 36vw;
@@ -133,12 +135,14 @@ img{
     right: 20px;
     bottom: 0px;
     font-size: 1.5vw;
+    cursor: context-menu;
 
     @media (max-width: 900px) {
         bottom: 0px;
         right: 0;
         p{
             font-size: 3vw;
+
         }
     }
 }

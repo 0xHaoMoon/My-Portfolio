@@ -15,6 +15,7 @@ import { ArrowLeftComponent } from './component/arrow-left/arrow-left.component'
 import { ProjectComponent } from './component/project/project.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ArrowLeftComponent,
     ProjectComponent,
     ContactComponent,
+    FooterComponent,
 
   ],
   imports: [

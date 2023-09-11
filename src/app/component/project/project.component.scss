@@ -17,6 +17,7 @@
 }
 
 .info-container{
+    cursor: context-menu;
     @media (min-width: 860px) {
         display: flex;
         flex-direction: column;

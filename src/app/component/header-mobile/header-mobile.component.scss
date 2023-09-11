@@ -67,6 +67,11 @@
     gap: 23vw;
     width: 80vw;
     font-size: 2rem;
+
+    @media (min-width: 860px) {
+      gap: 8vw;
+    }
+       
     a{
         border-width: 0 0 4px 4px;
         width: 1rem;
@@ -144,3 +149,4 @@
       }
     }
   }
+
