@@ -4,6 +4,10 @@ body{
     margin: 0;
 }
 
+.contact-container{
+    background-image: url('./assets/img/rect.svg');
+}
+
 @font-face {
     font-family: syne;
     src: url(./assets/fonts/Syne/Syne-VariableFont_wght.ttf)

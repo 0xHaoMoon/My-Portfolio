@@ -43,6 +43,7 @@ import { ImprintComponent } from './imprint/imprint.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
