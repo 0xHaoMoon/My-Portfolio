@@ -1,12 +1,20 @@
 .content {
-    height: calc(100vh - 304px);
-    padding: 100px 150px 0px 150px;
+    font-family: "syne";
+
+    font-family: "syne";
+    height: 50vh;
+    padding-top: 13vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
     a {
         text-decoration: none;
     }
 
-    @media (max-width: 1200px) {
-        padding: 100px 40px 50px 40px; 
+    @media (min-width: 860px) {
+        font-family: "syne";
+        height: 70vh;
+        padding-top: 15vh;
+        font-size: xx-large;
     } 
 }
