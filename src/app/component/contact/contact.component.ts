@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import* as AOS from 'aos'
 @Component({
   selector: 'app-contact',
@@ -11,6 +11,9 @@ export class ContactComponent implements OnInit{
   @ViewChild('emailField') emailField!:ElementRef;
   @ViewChild('messageField') messageField!:ElementRef;
   @ViewChild('sendButton') sendButton!:ElementRef;
+
+  @Input() emailsend : boolean = false;
+
   constructor(){}
 
   ngOnInit():void{
@@ -20,6 +23,8 @@ export class ContactComponent implements OnInit{
   async sendMail(){
      
     console.log('send Mail', this.myForm);
+    this.emailsend = true;
+
 
     let nameField = this.nameField.nativeElement
     let emailField = this.emailField.nativeElement
@@ -37,6 +42,7 @@ export class ContactComponent implements OnInit{
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
 
+    
     //send
     await fetch("https://hao-truong.developerakademie.net/send_mail/send_mail.php",
     {
@@ -44,13 +50,35 @@ export class ContactComponent implements OnInit{
       body: fd
     }
     );
+    
+
 
     // Text anzeigen : Nachricht gesendet
-    nameField.disabled=false;
-    emailField.disabled=false;
-    messageField.disabled=false;
-    sendButton.disabled=false;
+    this.clearForm(nameField, messageField, emailField, sendButton);
+    this.enableForm(nameField, messageField, emailField, sendButton);
+    setTimeout(() => {
+      this.emailsend = false;
+    }, 3000);
+
+  }
+
+  enableForm(nameField: { disabled: boolean; }, messageField: { disabled: boolean; }, emailField: { disabled: boolean; }, sendButton: { disabled: boolean; }) {
+    nameField.disabled = false;
+    messageField.disabled = false;
+    emailField.disabled = false;
+    sendButton.disabled = false;
+  }
+  
+  clearForm(nameField: { value: string; }, messageField: { value: string; }, emailField: { value: string; }, sendButton: { value: string; }){
+    nameField.value = '';
+    messageField.value = '';
+    emailField.value = '';
+    sendButton.value = '';
+
   }
 }
+
+
+
 
 
