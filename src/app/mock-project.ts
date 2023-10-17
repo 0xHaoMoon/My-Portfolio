@@ -19,7 +19,7 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | HTML | CSS',
         desc: 'Task manager inspired by the Kanban system. Create and organize tasks using the drag and drop function, assign these to users, and use specific categories.',
         image: 'Join_Kanban_Template.png',
-        URL: 'https://crm.hao-truong.de',
+        URL: 'https://join.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/simple-crm',
     },
 
