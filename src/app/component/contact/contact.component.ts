@@ -44,7 +44,7 @@ export class ContactComponent implements OnInit{
 
     
     //send
-    fetch("https://hao-truong/send_mail/send_mail.php", {
+    fetch("https://hao-truong.de/send_mail/send_mail.php", {
       method: 'POST',
       body: fd
     })
