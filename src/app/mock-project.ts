@@ -7,8 +7,8 @@ export const PROJECTS: Project[] = [
         name: 'Simple-CRM',
         subheadline: 'Angular | Typescript | Firebase | SCSS  | Material Design ',
         desc: 'A CRM prototype that is designed with Material Design, based on Angular, and using examples CRUD with Firebase',
-        image: 'Join_Kanban_Template.png',
-        URL: 'https://hao-truong.developerakademie.net/El-Pollo-Loco-main/index.html',
+        image: 'crm.jpg',
+        URL: 'crm.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/simple-crm',
     },
 
@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | HTML | CSS',
         desc: 'Task manager inspired by the Kanban system. Create and organize tasks using the drag and drop function, assign these to users, and use specific categories.',
         image: 'Join_Kanban_Template.png',
-        URL: 'https://hao-truong.developerakademie.net/Join-main/index.html',
+        URL: 'join.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/Join',
     },
 
@@ -27,9 +27,9 @@ export const PROJECTS: Project[] = [
         name: 'Retro Pokedex',
         subheadline: 'JavaScript | REST-API | HTML | CSS ',
         desc: 'This simple library, based on the PokéAPI, provides and catalogues Pokémon information in a retro design.',
-        image: 'Join_Kanban_Template.png',
-        URL: 'https://hao-truong.developerakademie.net/El-Pollo-Loco-main/index.html',
+        image: 'pokedex.jpg',
+        URL: 'pokedex.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/Pokedex',
     },
 
-];
+]
