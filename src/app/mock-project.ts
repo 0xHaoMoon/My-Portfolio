@@ -19,7 +19,7 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | HTML | CSS',
         desc: 'Task manager inspired by the Kanban system. Create and organize tasks using the drag and drop function, assign these to users, and use specific categories.',
         image: 'Join_Kanban_Template.png',
-        URL: 'crm.hao-truong.de',
+        URL: 'https://crm.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/simple-crm',
     },
 
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
         subheadline: 'JavaScript | REST-API | HTML | CSS ',
         desc: 'This simple library, based on the PokéAPI, provides and catalogues Pokémon information in a retro design.',
         image: 'pokedex.jpg',
-        URL: 'pokedex.hao-truong.de',
+        URL: 'https://pokedex.hao-truong.de',
         gitHub: 'https://github.com/0xHaoMoon/Pokedex',
     },
 
