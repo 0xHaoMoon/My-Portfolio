@@ -37,19 +37,17 @@ export class ContactComponent implements OnInit{
     sendButton.disabled=true;
     
     // Animation anzeigen
-    let fd = new FormData();
+    let fd = new FormData()
     fd.append('name', nameField.value);
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
 
     
     //send
-    await fetch("https://hao-truong.developerakademie.net/send_mail/send_mail.php",
-    {
+    fetch("https://hao-truong/send_mail/send_mail.php", {
       method: 'POST',
       body: fd
-    }
-    );
+    })
     
 
 
